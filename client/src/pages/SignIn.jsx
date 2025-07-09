@@ -15,7 +15,7 @@ export default function SignIn() {
 
   const apiBase = import.meta.env.VITE_API_URL;
   console.log(apiBase)
-  
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -31,6 +31,7 @@ export default function SignIn() {
         headers: {
           'Content-Type': 'application/json',
         },
+        credentials: 'include',
         body: JSON.stringify(formData),
       });
       const data = await res.json();
