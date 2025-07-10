@@ -26,7 +26,7 @@ app.use(cookieParser());
 app.use(cors({
   origin: [
     'http://localhost:5173',                             
-    'https://real-estate-frontend-ji6j.onrender.com'             
+    'https://real-estate-frontend-m6hs.onrender.com'             
   ],
   credentials: true
 }));
